@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background: rgba($color-primary, $alpha: .5); /* Safari */
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -16,6 +20,12 @@ body {
 
 .container {
     max-width: 120rem;
+    padding: 0 1rem;
     margin: 0 auto;
 }
+
+.block {
+    display: block;
+}
+
 

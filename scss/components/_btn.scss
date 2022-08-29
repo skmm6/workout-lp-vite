@@ -1,0 +1,29 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: $wight-semiBold;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: 1px;
+        color: currentColor;
+        padding: 2.4rem 4.3rem;
+        border-radius: 10px;
+        width: 21rem;
+        text-align: center;
+    }
+
+    &-primary,
+    &-primary:link,
+    &-primary:visited {
+        background-color: $color-primary;
+    }
+
+    &-gray,
+    &-gray:link,
+    &-gray:visited {
+        background-color: rgba($color-white, .1);
+    }
+}

@@ -4,3 +4,25 @@ body {
     font-weight: 400;
     color: $color-white;
 }
+
+.heading-primory {
+    font-weight: $wight-semiBold;
+    font-size: 20rem;
+    line-height: 17rem;
+    letter-spacing: -2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    &-fix {
+        transform: translateX(-1.4rem);
+    }
+}
+
+
+
+.heading-description {
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.5px;
+    opacity: .5;
+}
