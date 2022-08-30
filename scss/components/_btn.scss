@@ -13,6 +13,7 @@
         border-radius: 10px;
         width: 21rem;
         text-align: center;
+        transition: .3s ease;
     }
 
     &-primary,
@@ -21,9 +22,21 @@
         background-color: $color-primary;
     }
 
+    &-primary:hover,
+    &-primary:active {
+        background-color: $color-primary-dark;
+    }
+
     &-gray,
     &-gray:link,
     &-gray:visited {
         background-color: rgba($color-white, .1);
     }
+
+    &-gray:hover,
+    &-gray:active {
+        background-color: rgba($color-white, .2);
+    }
+
+    
 }

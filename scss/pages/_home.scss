@@ -1,9 +1,18 @@
 .section-hero {
-    padding: 5rem 0;
-    position: relative;
+    padding: 5rem 0 19rem 0;
+    background-image: url('./public/image-hero.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    z-index: -1;
+    background-position: 90% 60%;
+
+    @media screen and (min-width:112.5em ) {
+        background-size: 45%;
+    }
 }
 
 .hero {
+    display: flex;
     &-text-box {
         display: flex;
         flex-direction: column;
@@ -47,10 +56,50 @@
     &-img {
         position: absolute;
         z-index: -1;
-        right: 33%;
-        transform: translateX(50%);
-        top: -20%;
+        top: -60%;
+        left: -40rem;
         object-fit: cover;
-        max-height: 1170px;
+        width: 59.9rem;
+
     }
+
+    &-training-statistic {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-self: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        letter-spacing: 1px;
+        transform: translateY(-8rem);
+        position: relative;
+        
+        &__time,
+        &__calories {
+            padding: 2rem 3rem;
+            border-radius: 2rem;
+            background-color: rgba($color-white, .1);
+            display: flex;
+            flex-direction: column;
+            gap: .5rem
+        }
+
+        &__time span,
+        &__calories span {
+            font-size: 4rem;
+            line-height: 4rem;
+            
+        }
+
+        &__time span{
+            color: $color-yellow;
+        }
+
+        &__calories span{
+            color: $color-red;
+        }
+    }   
+
+
 }
