@@ -16,13 +16,37 @@ body {
     &-fix {
         transform: translateX(-1.4rem);
     }
+
+    @media screen and (max-width: $bp-medium) {
+        font-size: 13rem;
+        line-height: 13rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+        font-size: 11rem;
+        line-height: 11rem;
+    }
+
 }
-
-
 
 .heading-description {
     font-size: 1.6rem;
     line-height: 2.9rem;
     letter-spacing: 0.5px;
     opacity: .5;
+}
+
+.heading-tertiary {
+    font-weight: $wight-semiBold;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.3px;
+}
+
+.heading-cart {
+    font-weight: $wight-semiBold;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.3px;
+    color: currentColor;
 }

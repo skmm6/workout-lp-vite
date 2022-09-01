@@ -11,6 +11,14 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+
+    @media screen and (max-width: $bp-large) {
+        font-size: 56.25%;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -27,6 +35,10 @@ body {
 
 .block {
     display: block;
+
+    @media screen and (max-width: $bp-small) {
+        display: inline;
+    }
 }
 
 

@@ -38,5 +38,30 @@
         background-color: rgba($color-white, .2);
     }
 
+    &-text,
+    &-text:link,
+    &-text:visited {
+        display: inline-block;
+        font-size: 1.2rem;
+        line-height: 3rem;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .3s ease;
+        color: currentColor;
+        
+    }
+
+    &-text--gray,
+    &-text--gray:link,
+    &-text--gray:visited {
+        color: rgba($color-white, .67);
+    }
+
+    &-text--gray:hover,
+    &-text--gray:active {
+        color: rgba($color-primary, .67);
+    }
+
     
 }

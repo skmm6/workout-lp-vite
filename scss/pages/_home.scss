@@ -1,5 +1,6 @@
 .section-hero {
-    padding: 5rem 0;
+    padding: 7rem 0;
+    margin-bottom: 12rem;
 
 }
 
@@ -43,7 +44,12 @@
 
     &-btn {
         display: flex;
-        gap: 30px;
+        gap: 3rem;
+
+        @media screen and (max-width: $bp-small){
+            flex-direction: column;
+        }
+
     }
 
     &-img {
@@ -53,7 +59,7 @@
         transform: translateY(-30%);
         max-width: 78rem;
 
-        @media screen and (max-width: 75em){
+        @media screen and (max-width: $bp-large){
             display: none;
         }
     }
@@ -97,18 +103,44 @@
             color: $color-red;
         }
 
-        @media screen and (max-width: 65.625em){
+        @media screen and (max-width: $bp-large){
             flex-direction: row;
             transform: translateY(0);
             z-index: 1;
             align-self: flex-start;
         }
 
+        
+
     }   
 
-    @media screen and (max-width: 65.625em){
+    @media screen and (max-width: $bp-large){
       flex-direction: column;
       gap: 3rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+       
+    }
+}
+
+.exercises {
+
+    display: grid;
+    gap: 5rem;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &-grid {
+        display: grid;
+        column-gap: 4rem;
+        row-gap: 8rem;
+
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }

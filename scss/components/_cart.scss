@@ -1,0 +1,48 @@
+.exercises-cart {
+
+    &-img__box {
+        display:inline-block;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #000000 100%);
+        position:relative;
+        
+
+    }
+
+    &-img {
+        border-radius: 10px;
+        z-index:-1;
+        display:block;
+        position: relative;
+    }
+
+    &-time {
+        font-weight: $wight-semiBold;
+        font-size: 2rem;
+        line-height: 1.9rem;
+        letter-spacing: 1.36667px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        background-color: $color-black;
+        border-top-left-radius: 1.2rem;
+    }
+
+    &-text_box {
+        padding-left: 2rem;
+        display: grid;
+        row-gap: 1.5rem;
+        transform: translateY(-40%);       
+    }
+
+    &-info {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.5px;
+        color: rgba($color-white, .67);
+        
+    }
+    
+}
