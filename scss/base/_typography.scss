@@ -36,6 +36,14 @@ body {
     opacity: .5;
 }
 
+.heading-primary {
+    font-weight: $wight-semiBold;
+    font-size: 12rem;
+    line-height: 12rem;
+    letter-spacing: -2px;
+    color: currentColor;
+}
+
 .heading-tertiary {
     font-weight: $wight-semiBold;
     font-size: 3.5rem;
