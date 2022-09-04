@@ -12,6 +12,11 @@
         border-radius: 99rem;
     }
 
+    @media screen and (max-width: $bp-medium) {
+        height: auto;
+        margin-top: 1rem;
+    }
+
 }
 
 .logo {
@@ -25,6 +30,9 @@
         text-decoration: none;
         text-transform: uppercase;
         transition: color .3s ease;
+    }
+    @media screen and (max-width: $bp-medium) {
+        font-size: 3rem;
     }
 }
 
